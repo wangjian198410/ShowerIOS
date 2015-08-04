@@ -16,7 +16,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor= [UIColor whiteColor];
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"welcome" bundle:nil];
+    WelcomeViewController* welcomeVC = [storyboard instantiateViewControllerWithIdentifier:@"welcome"];
+    self.window.rootViewController = welcomeVC;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#include "WelcomeViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
