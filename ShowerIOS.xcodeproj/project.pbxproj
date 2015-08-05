@@ -22,6 +22,8 @@
 		37DE11F41B71BB3000B5B571 /* welcome2.png in Resources */ = {isa = PBXBuildFile; fileRef = 37DE11DC1B71BB2F00B5B571 /* welcome2.png */; };
 		37DE11FA1B71BB3000B5B571 /* welcome3.png in Resources */ = {isa = PBXBuildFile; fileRef = 37DE11E21B71BB2F00B5B571 /* welcome3.png */; };
 		37DE12001B71BB3000B5B571 /* welcome4.png in Resources */ = {isa = PBXBuildFile; fileRef = 37DE11E81B71BB3000B5B571 /* welcome4.png */; };
+		37DE12081B71FDBE00B5B571 /* ProjectConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 37DE12071B71FDBE00B5B571 /* ProjectConfig.m */; };
+		37DE120B1B7211F800B5B571 /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37DE120A1B7211F800B5B571 /* main.storyboard */; };
 		7700135203D253E13DA6BB55 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CE0E5A4D503522C4D1BF26 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +64,9 @@
 		37DE11DC1B71BB2F00B5B571 /* welcome2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome2.png; sourceTree = "<group>"; };
 		37DE11E21B71BB2F00B5B571 /* welcome3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome3.png; sourceTree = "<group>"; };
 		37DE11E81B71BB3000B5B571 /* welcome4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome4.png; sourceTree = "<group>"; };
+		37DE12061B71FBE900B5B571 /* ProjectConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectConfig.h; sourceTree = "<group>"; };
+		37DE12071B71FDBE00B5B571 /* ProjectConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectConfig.m; sourceTree = "<group>"; };
+		37DE120A1B7211F800B5B571 /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
 		787A77640FD9D28E73FD9E95 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B9CE0E5A4D503522C4D1BF26 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -120,6 +125,7 @@
 		3750C1431B4A9C6800B805AD /* ShowerIOS */ = {
 			isa = PBXGroup;
 			children = (
+				37DE12091B7206C500B5B571 /* main */,
 				374F3F1D1B6F8929004EFD4F /* welcome */,
 				37D5A9B51B6E372C00465EE5 /* Utils */,
 				37D5A9B11B6E2A0C00465EE5 /* MainViewControllers */,
@@ -179,6 +185,8 @@
 		37D5A9B51B6E372C00465EE5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				37DE12061B71FBE900B5B571 /* ProjectConfig.h */,
+				37DE12071B71FDBE00B5B571 /* ProjectConfig.m */,
 				37D5A9BA1B6E37EA00465EE5 /* Utils.h */,
 				37D5A9BB1B6E37EA00465EE5 /* Utils.m */,
 				37D5A9B61B6E375700465EE5 /* Catagory */,
@@ -204,6 +212,14 @@
 				37DE11E81B71BB3000B5B571 /* welcome4.png */,
 			);
 			path = welcome;
+			sourceTree = "<group>";
+		};
+		37DE12091B7206C500B5B571 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				37DE120A1B7211F800B5B571 /* main.storyboard */,
+			);
+			path = main;
 			sourceTree = "<group>";
 		};
 		41E8D1105A20E3E1DA9D5182 /* Frameworks */ = {
@@ -308,6 +324,7 @@
 				37DE11FA1B71BB3000B5B571 /* welcome3.png in Resources */,
 				374F3F221B6F8AE9004EFD4F /* welcome.storyboard in Resources */,
 				3750C1551B4A9C6800B805AD /* LaunchScreen.xib in Resources */,
+				37DE120B1B7211F800B5B571 /* main.storyboard in Resources */,
 				37DE11EE1B71BB3000B5B571 /* welcome1.png in Resources */,
 				37DE11F41B71BB3000B5B571 /* welcome2.png in Resources */,
 				37DE12001B71BB3000B5B571 /* welcome4.png in Resources */,
@@ -369,6 +386,7 @@
 				37D5A9B91B6E378B00465EE5 /* AFHTTPRequestOperationManager+Util.m in Sources */,
 				374F3F201B6F8A1E004EFD4F /* WelcomeViewController.m in Sources */,
 				3750C1471B4A9C6800B805AD /* main.m in Sources */,
+				37DE12081B71FDBE00B5B571 /* ProjectConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

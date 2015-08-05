@@ -144,9 +144,8 @@
     }];
     
     //将滑动图启动过的信息保存到 NSUserDefaults 中，使得第二次不运行滑动图
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setObject:@"YES" forKey:@"isScrollViewAppear"];
-}
+    [Utils configFirstLauncher:YES];
+   }
 
 
 @end

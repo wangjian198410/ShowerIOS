@@ -9,11 +9,14 @@
 #import <Foundation/Foundation.h>
 
 #import "AFHTTPRequestOperationManager+Util.h"
+#import "ProjectConfig.h"
 
 
 @interface Utils : NSObject
 
-+ Bool
++(BOOL) isFirstLauncher;
++ (void)configFirstLauncher:(BOOL)firstLauncher;
+
 
 
 @end
