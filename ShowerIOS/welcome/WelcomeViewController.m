@@ -1,10 +1,3 @@
-//
-//  WelcomeViewController.m
-//  ShowerIOS
-//
-//  Created by wangjian on 15/8/3.
-//  Copyright (c) 2015年 wj. All rights reserved.
-//
 
 #import "WelcomeViewController.h"
 @implementation WelcomeViewController{
@@ -12,14 +5,16 @@
     NSMutableArray* _viewControllers;
     UIPageControl* _pageControl;
     NSArray* _coverList;
+    NSInteger _lastPosition;
+    
 }
 
 - (void)viewDidLoad{
     [super viewDidLoad];
-    _coverList = @[@"android.png",
-                   @"ajax.png",
-                   @"swift.png",
-                   @"html.png"];
+    _coverList = @[@"welcome1.png",
+                   @"welcome2.png",
+                   @"welcome3.png",
+                   @"welcome4.png"];
     NSUInteger numberPages = _coverList.count;
     // 程序将会采用延迟加载的方式来创建PageController控制器
     // 因此此处只向数组中添加一些null作为占位符，
@@ -33,13 +28,14 @@
     _scrollView = [[UIScrollView alloc]
                    initWithFrame:[[UIScreen mainScreen] bounds]];
     // 设置背景色
-    _scrollView.backgroundColor = [UIColor grayColor];
+    _scrollView.backgroundColor = [UIColor whiteColor];
     _scrollView.pagingEnabled = YES;
     // 设置UIScrollPane的contentSize——就是它可滚动区域的大小
     _scrollView.contentSize = CGSizeMake(CGRectGetWidth(_scrollView.frame)
                                          * numberPages, CGRectGetHeight(_scrollView.frame));
     _scrollView.showsHorizontalScrollIndicator = NO;
     _scrollView.showsVerticalScrollIndicator = NO;
+
     _scrollView.scrollsToTop = NO;
     // 设置该控制作为UIScrollView的委托对象
     _scrollView.delegate = self;
@@ -47,11 +43,11 @@
     // 创建UIPageControl控件
     _pageControl = [[UIPageControl alloc] init];
     // 设置UIPageControl的大小和位置
-    _pageControl.frame = CGRectMake(0, 0 , CGRectGetWidth(_scrollView.frame), CGRectGetHeight(_scrollView.frame));
+        _pageControl.frame = CGRectMake(CGRectGetWidth(_scrollView.frame)/2-5, CGRectGetHeight(_scrollView.frame) - 60 , 10, 30);
     // 设置UIPageControl的圆点的颜色
-    _pageControl.pageIndicatorTintColor = [UIColor blueColor];
+    _pageControl.pageIndicatorTintColor = [UIColor grayColor];
     // 设置UIPageControl的高亮圆点的颜色
-    _pageControl.currentPageIndicatorTintColor = [UIColor redColor];
+    _pageControl.currentPageIndicatorTintColor = [UIColor blueColor];
     // 设置UIPageControl控件当前显示第几页
     _pageControl.currentPage = 0;
     // 设置UIPageControl控件总共包含多少页
@@ -94,7 +90,7 @@
         // 设置controller控制器的bookLabel控件的文本
         controller.bookImage.image = [UIImage imageNamed:_coverList[page]];
         // 将controller控制器添加为当前控制器的子控制器
-        [self addChildViewController:controller];
+ //       [self addChildViewController:controller];
         // 将controller控制器对应的View添加到UIScrollView中
         [_scrollView addSubview:controller.view];
     }
@@ -115,7 +111,12 @@
     [self loadScrollViewWithPage:page - 1];
     [self loadScrollViewWithPage:page];
     [self loadScrollViewWithPage:page + 1];
+    if (page >= _coverList.count-1) {
+        //调用方法，使滑动图消失
+       [self scrollViewDisappearAndJumpMain];
+    }
 }
+
 // 事件监听方法，当用户更改UIPageControl的选中页时激发该方法
 - (void) changePage:(id)sender
 {
@@ -132,5 +133,20 @@
     [self loadScrollViewWithPage:page];
     [self loadScrollViewWithPage:page + 1];
 }
+
+-(void)scrollViewDisappearAndJumpMain{
+    //设置滑动图消失的动画效果图
+    [UIView animateWithDuration:3.0f animations:^{
+        _scrollView.center = CGPointMake(self.view.frame.size.width/2, 1.5 * self.view.frame.size.height);
+    } completion:^(BOOL finished) {
+        [_scrollView removeFromSuperview];
+        [_pageControl removeFromSuperview];
+    }];
+    
+    //将滑动图启动过的信息保存到 NSUserDefaults 中，使得第二次不运行滑动图
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setObject:@"YES" forKey:@"isScrollViewAppear"];
+}
+
 
 @end

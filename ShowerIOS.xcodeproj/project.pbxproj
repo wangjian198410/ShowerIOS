@@ -15,13 +15,13 @@
 		3750C1551B4A9C6800B805AD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3750C1531B4A9C6800B805AD /* LaunchScreen.xib */; };
 		3750C1611B4A9C6900B805AD /* ShowerIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3750C1601B4A9C6900B805AD /* ShowerIOSTests.m */; };
 		379C84321B70EE7E009236A0 /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 379C84311B70EE7E009236A0 /* PageViewController.m */; };
-		379C84401B710014009236A0 /* ajax.png in Resources */ = {isa = PBXBuildFile; fileRef = 379C843C1B710014009236A0 /* ajax.png */; };
-		379C84411B710014009236A0 /* android.png in Resources */ = {isa = PBXBuildFile; fileRef = 379C843D1B710014009236A0 /* android.png */; };
-		379C84421B710014009236A0 /* html.png in Resources */ = {isa = PBXBuildFile; fileRef = 379C843E1B710014009236A0 /* html.png */; };
-		379C84431B710014009236A0 /* swift.png in Resources */ = {isa = PBXBuildFile; fileRef = 379C843F1B710014009236A0 /* swift.png */; };
 		37D5A9B41B6E2F4800465EE5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D5A9B31B6E2F4800465EE5 /* BaseViewController.m */; };
 		37D5A9B91B6E378B00465EE5 /* AFHTTPRequestOperationManager+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D5A9B81B6E378B00465EE5 /* AFHTTPRequestOperationManager+Util.m */; };
 		37D5A9BC1B6E37EA00465EE5 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D5A9BB1B6E37EA00465EE5 /* Utils.m */; };
+		37DE11EE1B71BB3000B5B571 /* welcome1.png in Resources */ = {isa = PBXBuildFile; fileRef = 37DE11D61B71BB2F00B5B571 /* welcome1.png */; };
+		37DE11F41B71BB3000B5B571 /* welcome2.png in Resources */ = {isa = PBXBuildFile; fileRef = 37DE11DC1B71BB2F00B5B571 /* welcome2.png */; };
+		37DE11FA1B71BB3000B5B571 /* welcome3.png in Resources */ = {isa = PBXBuildFile; fileRef = 37DE11E21B71BB2F00B5B571 /* welcome3.png */; };
+		37DE12001B71BB3000B5B571 /* welcome4.png in Resources */ = {isa = PBXBuildFile; fileRef = 37DE11E81B71BB3000B5B571 /* welcome4.png */; };
 		7700135203D253E13DA6BB55 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9CE0E5A4D503522C4D1BF26 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -52,16 +52,16 @@
 		3750C1601B4A9C6900B805AD /* ShowerIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowerIOSTests.m; sourceTree = "<group>"; };
 		379C84301B70EE7E009236A0 /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
 		379C84311B70EE7E009236A0 /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
-		379C843C1B710014009236A0 /* ajax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ajax.png; sourceTree = "<group>"; };
-		379C843D1B710014009236A0 /* android.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = android.png; sourceTree = "<group>"; };
-		379C843E1B710014009236A0 /* html.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = html.png; sourceTree = "<group>"; };
-		379C843F1B710014009236A0 /* swift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swift.png; sourceTree = "<group>"; };
 		37D5A9B21B6E2A4000465EE5 /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		37D5A9B31B6E2F4800465EE5 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		37D5A9B71B6E378B00465EE5 /* AFHTTPRequestOperationManager+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AFHTTPRequestOperationManager+Util.h"; sourceTree = "<group>"; };
 		37D5A9B81B6E378B00465EE5 /* AFHTTPRequestOperationManager+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPRequestOperationManager+Util.m"; sourceTree = "<group>"; };
 		37D5A9BA1B6E37EA00465EE5 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		37D5A9BB1B6E37EA00465EE5 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		37DE11D61B71BB2F00B5B571 /* welcome1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome1.png; sourceTree = "<group>"; };
+		37DE11DC1B71BB2F00B5B571 /* welcome2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome2.png; sourceTree = "<group>"; };
+		37DE11E21B71BB2F00B5B571 /* welcome3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome3.png; sourceTree = "<group>"; };
+		37DE11E81B71BB3000B5B571 /* welcome4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome4.png; sourceTree = "<group>"; };
 		787A77640FD9D28E73FD9E95 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B9CE0E5A4D503522C4D1BF26 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -162,10 +162,7 @@
 		379C84331B70F3E1009236A0 /* images */ = {
 			isa = PBXGroup;
 			children = (
-				379C843C1B710014009236A0 /* ajax.png */,
-				379C843D1B710014009236A0 /* android.png */,
-				379C843E1B710014009236A0 /* html.png */,
-				379C843F1B710014009236A0 /* swift.png */,
+				37DE11D51B71BB2F00B5B571 /* welcome */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -196,6 +193,17 @@
 				37D5A9B81B6E378B00465EE5 /* AFHTTPRequestOperationManager+Util.m */,
 			);
 			path = Catagory;
+			sourceTree = "<group>";
+		};
+		37DE11D51B71BB2F00B5B571 /* welcome */ = {
+			isa = PBXGroup;
+			children = (
+				37DE11D61B71BB2F00B5B571 /* welcome1.png */,
+				37DE11DC1B71BB2F00B5B571 /* welcome2.png */,
+				37DE11E21B71BB2F00B5B571 /* welcome3.png */,
+				37DE11E81B71BB3000B5B571 /* welcome4.png */,
+			);
+			path = welcome;
 			sourceTree = "<group>";
 		};
 		41E8D1105A20E3E1DA9D5182 /* Frameworks */ = {
@@ -297,13 +305,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37DE11FA1B71BB3000B5B571 /* welcome3.png in Resources */,
 				374F3F221B6F8AE9004EFD4F /* welcome.storyboard in Resources */,
 				3750C1551B4A9C6800B805AD /* LaunchScreen.xib in Resources */,
-				379C84421B710014009236A0 /* html.png in Resources */,
+				37DE11EE1B71BB3000B5B571 /* welcome1.png in Resources */,
+				37DE11F41B71BB3000B5B571 /* welcome2.png in Resources */,
+				37DE12001B71BB3000B5B571 /* welcome4.png in Resources */,
 				3750C1521B4A9C6800B805AD /* Images.xcassets in Resources */,
-				379C84431B710014009236A0 /* swift.png in Resources */,
-				379C84411B710014009236A0 /* android.png in Resources */,
-				379C84401B710014009236A0 /* ajax.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

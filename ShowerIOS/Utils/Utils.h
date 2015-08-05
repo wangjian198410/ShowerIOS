@@ -13,7 +13,7 @@
 
 @interface Utils : NSObject
 
-
++ Bool
 
 
 @end

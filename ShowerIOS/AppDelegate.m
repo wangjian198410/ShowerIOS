@@ -22,7 +22,6 @@
     WelcomeViewController* welcomeVC = [storyboard instantiateViewControllerWithIdentifier:@"welcome"];
     self.window.rootViewController = welcomeVC;
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 
